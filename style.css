@@ -1,11 +1,40 @@
-h1 {
-  color: rgb(170, 20, 208);
+#id1 h1 {
+  color: rgb(210, 77, 0);
+  font-size: 2em;
 }
 
-.products{
-    color: black;
+#id1 .class1 h2{
+  color: rgb(22, 11, 230);
 }
 
-#h1{
-    color: royalblue;
+#id1 .class2 h2{
+  color: rgb(230, 11, 146);
+}
+#id1 img {
+  width: 200px;
+  height: 200px;
+}
+
+.class1 h2 {
+  color: blueviolet;
+}
+
+#id2 h1 {
+  color: rgba(255, 0, 153, 0.816);
+  font-size: 2em;
+}
+
+#id2 img {
+  width: 800px;
+  height: 200px;
+}
+
+p {
+  font-size: 1.2em;
+  color: green;
+}
+
+h2 {
+  color: red;
+  font-size: 1.5em;
 }
