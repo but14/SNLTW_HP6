@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drone Show</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+<script>
+let drones = [];
+let targetPositions = [];
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  // Định nghĩa các điểm mục tiêu tạo thành chữ "NGOC" (không dấu, viết hoa)
+  const ngocPoints = [
+    // Chữ "N"
+    {x: 100, y: 100}, {x: 100, y: 120}, {x: 100, y: 140}, {x: 100, y: 160}, {x: 100, y: 180}, // Cột dọc trái
+    {x: 120, y: 100}, {x: 140, y: 120}, {x: 160, y: 140}, {x: 180, y: 160}, // Nét chéo
+    {x: 200, y: 100}, {x: 200, y: 120}, {x: 200, y: 140}, {x: 200, y: 160}, {x: 200, y: 180}, // Cột dọc phải
+    // Chữ "G" (đã chỉnh sửa: bỏ 2 điểm đỏ, thêm 1 điểm xanh)
+    {x: 250, y: 100}, {x: 250, y: 120}, {x: 250, y: 140}, {x: 250, y: 180}, // Cột dọc trái (bỏ y=160)
+    {x: 270, y: 100}, {x: 290, y: 100}, {x: 310, y: 100}, // Nét ngang trên (bỏ x=330, y=100)
+    {x: 330, y: 120}, {x: 330, y: 140}, // Cột dọc phải (phần trên)
+    {x: 270, y: 140}, {x: 290, y: 140}, {x: 310, y: 140}, {x: 330, y: 140}, // Nét ngang giữa
+    {x: 270, y: 160}, {x: 270, y: 180}, // Cột dọc giữa (phần dưới)
+    {x: 310, y: 160}, // Điểm mới (màu xanh)
+    {x: 270, y: 180}, {x: 290, y: 180}, {x: 310, y: 180}, {x: 330, y: 180}, // Nét ngang dưới
+    // Chữ "O"
+    {x: 380, y: 100}, {x: 380, y: 120}, {x: 380, y: 140}, {x: 380, y: 160}, {x: 380, y: 180}, // Cột dọc trái
+    {x: 400, y: 100}, {x: 420, y: 100}, {x: 440, y: 100}, // Nét ngang trên
+    {x: 460, y: 100}, {x: 460, y: 120}, {x: 460, y: 140}, {x: 460, y: 160}, {x: 460, y: 180}, // Cột dọc phải
+    {x: 400, y: 180}, {x: 420, y: 180}, {x: 440, y: 180}, // Nét ngang dưới
+    // Chữ "C"
+    {x: 510, y: 100}, {x: 510, y: 120}, {x: 510, y: 140}, {x: 510, y: 160}, {x: 510, y: 180}, // Cột dọc trái
+    {x: 530, y: 100}, {x: 550, y: 100}, {x: 570, y: 100}, // Nét ngang trên
+    {x: 530, y: 180}, {x: 550, y: 180}, {x: 570, y: 180}, // Nét ngang dưới
+  ];
+
+  // Khởi tạo các drone với vị trí ngẫu nhiên
+  for (let i = 0; i < ngocPoints.length; i++) {
+    drones.push({
+      x: random(width),
+      y: random(height),
+      vx: 0,
+      vy: 0
+    });
+    targetPositions.push(ngocPoints[i]);
+  }
+}
+
+function draw() {
+  background(0); // Nền đen
+
+  // Cập nhật vị trí drone
+  for (let i = 0; i < drones.length; i++) {
+    let drone = drones[i];
+    let target = targetPositions[i];
+
+    // Tính khoảng cách đến vị trí mục tiêu
+    let dx = target.x - drone.x;
+    let dy = target.y - drone.y;
+    let distance = sqrt(dx * dx + dy * dy);
+
+    // Di chuyển drone đến vị trí mục tiêu
+    if (distance > 1) {
+      let speed = 0.05;
+      drone.vx = dx * speed;
+      drone.vy = dy * speed;
+      drone.x += drone.vx;
+      drone.y += drone.vy;
+    }
+
+    // Vẽ drone dưới dạng điểm sáng
+    noStroke();
+    fill(255, 255, 0); // Màu vàng sáng
+    ellipse(drone.x, drone.y, 10, 10);
+  }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+</script>
+</body>
+</html>
