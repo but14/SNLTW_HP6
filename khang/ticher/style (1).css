@@ -1,0 +1,28 @@
+main {
+  width: 1200px;
+  height: 1200px;
+}
+
+.container {
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  background-color: mediumblue;
+}
+
+.content1 {
+  width: 600px;
+  height: 600px;
+  background-color: lightblue;
+  float: right;
+}
+.content2 {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(158, 9, 148);
+  float: right;
+}
+
+ul{
+    list-style-type: style type none;
+}

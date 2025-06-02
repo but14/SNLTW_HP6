@@ -1,0 +1,36 @@
+main{
+    width: 1000px;
+    height: 800pxl;;
+}
+
+.header{
+    background-color: blue;
+    width: 1000px;
+    height: 100px;
+}
+
+.container{
+    width: 1000px;
+    height: 600px;
+    display: flex
+}
+
+.left{
+    background-color: yellow;
+    width: 200px;
+    height: 600px;
+    float: right
+}
+
+.right{
+    background-color: greenyellow;
+    width: 800px;
+    height: 600px;
+    float: right
+}
+
+.footer{
+    background-color: black;
+    width: 1000px;
+    height: 100px
+}
