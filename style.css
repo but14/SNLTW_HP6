@@ -19,6 +19,30 @@ main {
 .content2 {
   width: 600px;
   height: 600px;
-  background-color: rgb(158, 9, 148);
+  background-color: rgb(141, 206, 228);
   float: right;
+}
+
+.content1 {
+  .list {
+    list-style: none;
+  }
+
+  li {
+    padding: 0px 10px 10px 0px;
+  }
+
+  a{
+    text-decoration: none;
+    color: brown;
+  }
+}
+
+.content2 {
+  li {
+    padding: 0px 10px 10px 0px;
+    list-style: none;
+    float: left;
+  }
+
 }
