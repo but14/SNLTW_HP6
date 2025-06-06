@@ -1,11 +1,48 @@
-h1 {
-  color: rgb(170, 20, 208);
+main {
+  width: 1200px;
+  height: 1200px;
 }
 
-.products{
-    color: black;
+.container {
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  background-color: mediumblue;
 }
 
-#h1{
-    color: royalblue;
+.content1 {
+  width: 600px;
+  height: 600px;
+  background-color: lightblue;
+  float: right;
+}
+.content2 {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(141, 206, 228);
+  float: right;
+}
+
+.content1 {
+  .list {
+    list-style: none;
+  }
+
+  li {
+    padding: 0px 10px 10px 0px;
+  }
+
+  a{
+    text-decoration: none;
+    color: brown;
+  }
+}
+
+.content2 {
+  li {
+    padding: 0px 10px 10px 0px;
+    list-style: none;
+    float: left;
+  }
+
 }
