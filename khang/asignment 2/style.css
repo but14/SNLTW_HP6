@@ -1,13 +1,15 @@
 main{
     width: 1000px;
-    height: 800pxl;;
+    height: 800px;
 }
 
-.header{
-    background-color: blue;
+
+.header1{
+    background-color:  cyan;
     width: 1000px;
     height: 100px;
 }
+
 
 .container{
     width: 1000px;
@@ -33,4 +35,54 @@ main{
     background-color: black;
     width: 1000px;
     height: 100px
+}
+
+.header1{
+
+    ul{
+        list-style: none;
+    }
+    li{
+        padding-left: 20px;
+        color: azure;
+        float:left;
+        font-size: 30px;
+    }
+    
+    a{ text-decoration: none;}
+
+    li a:hover{
+        background-color: rgb(183, 255, 0);
+    }
+    
+}
+
+.left{
+
+    ul{
+        list-style: none;
+    }
+    li{
+        margin-bottom: 20px;
+        color: aliceblue;
+        font-size: 30px;
+    }
+
+    a{ text-decoration: none;}
+
+    li a:hover{
+        background-color: yellowgreen;
+    }
+}
+
+.right{
+    button{
+        width:100px;
+        height: 150px;
+        background-color: rgb(125, 55, 55);
+        color: aliceblue;
+        border: none;
+        border-radius: 20px;
+        font-size: 20px;
+    }
 }

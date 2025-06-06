@@ -1,12 +1,13 @@
 main{
     width: 1000px;
-    height: 800pxl;;
+    height: 900pxl;;
 }
 
 .header{
     width: 1000px;
     height: 100px;
 }
+
 
 .container{
     width: 1000px;
@@ -32,4 +33,6 @@ main{
     width: 1000px;
     height: 100px
 }
+
+
 
