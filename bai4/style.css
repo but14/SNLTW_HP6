@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1000px;
+  margin-left: 350px;
+}
+
+.block-desc {
+  h1 {
+    font-size: 50px;
+    color: blue;
+  }
+  p {
+    font-size: 20px;
+    color: #333;
+  }
+}
+
+.block-cont {
+  margin-top: 30px;
+}
+
+.block-cont.m01{
+    margin-top: 90px;
+}
+
