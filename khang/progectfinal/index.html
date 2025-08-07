@@ -1,0 +1,212 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://di-uploads-pod3.dealerinspire.com/porscheoffremont/uploads/2018/09/porsche-logo.jpg" alt="" style="width: 140px; height: 80px;">
+        </div>
+        <div>
+        <nav>
+            <ul>
+                <li><a href="#trangchu">Trang chủ</a></li>                    
+                <li>Các loại xe</li>
+                <li>Về chúng tôi</li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+    
+        <section id="trangchu">
+            <h1>"Experience the legacy of speed, design, and innovation — welcome to the world of Porsche."</h1>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="img/por1.avif" style="width:100%">
+  <img class="mySlides" src="img/por2.jpg" style="width:100%">
+  <img class="mySlides" src="img/por3.jpg" style="width:100%">
+  <img class="mySlides" src="img/por4.avif" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+        
+          </section>
+        <section>
+
+        </section>
+        <section>
+          <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Gioi thieu thong tin
+    </footer>
+
+
+
+        
+        
+        
+        
+</body>
+</html>
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porsche Landing Page</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="https://di-uploads-pod3.dealerinspire.com/porscheoffremont/uploads/2018/09/porsche-logo.jpg" alt="Porsche Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#trangchu">Trang chủ</a></li>
+        <li><a href="#cars">Các loại xe</a></li>
+        <li><a href="#about">Về chúng tôi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="trangchu" class="w3-container w3-center w3-padding-64">
+    <h1>"Experience the legacy of speed, design, and innovation — welcome to the world of Porsche."</h1>
+
+    <div class="w3-content w3-display-container" style="max-width:1000px;">
+      <img class="mySlides" src="img/por1.avif" style="width:100%">
+      <img class="mySlides" src="img/por2.jpg" style="width:100%">
+      <img class="mySlides" src="img/por3.jpg" style="width:100%">
+      <img class="mySlides" src="img/por4.avif" style="width:100%">
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Cars Section -->
+  <section id="cars" class="w3-container w3-padding-64 w3-light-grey w3-center">
+    <h2>Các loại xe</h2>
+    <p>Coming soon... (This section will show available Porsche models.)</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="w3-container w3-padding-64 w3-center">
+    <h2>Về chúng tôi</h2>
+    <p>Chúng tôi là đại lý Porsche hàng đầu, mang đến cho bạn trải nghiệm lái xe đỉnh cao với các dòng xe thể thao và sang trọng.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"></i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Porsche Fan Page. Giới thiệu thông tin.</p>
+  </footer>
+
+  <!-- Carousel Script -->
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+</body>
+</html>
